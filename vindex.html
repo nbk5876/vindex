@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        @media (max-width: 768px) {
+            th, td {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            th, td {
+                font-size: 12px;
+                padding: 6px;
+            }
+
+            table {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Movie Index</h1>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Movie Number</th>
+                    <th>Movie Name</th>
+                    <th>Thumb 1</th>
+                    <th>Thumb 2</th>
+                    <th>Thumb 3</th>
+                    <th>Thumb 4</th>
+                    <th>Web Link 1</th>
+                    <th>Web Link 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Repeat the tr below 24 times to create 24 rows -->
+                <tr>
+                    <td>1</td>
+                    <td>dad brake work nick haircut</td>
+                    <td><img src="./thumbs/famthmb2601.jpg"></td>
+                    <td><img src="./thumbs/famthmb2602.jpg"></td>
+                    <td><img src="./thumbs/famthmb2603.jpg"></td>
+                    <td><img src="./thumbs/famthmb2604.jpg"></td>
+                    <td><a href="https://drive.google.com/file/d/1c2mshB2wA5iP7LeXZMbhM_wNHpB_dj9o/view?usp=drive_link">link</td>
+                    <td>Data 8</td>
+                </tr>
+                <!-- Add 23 more rows similar to the one above -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
